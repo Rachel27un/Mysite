@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RU ART AND DESIGN LLC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background-color: #fff;
+      color: #111;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1087');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+      padding: 0 20px;
+    }
+    .hero-content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    .hero-buttons button {
+      font-family: 'Times New Roman', serif;
+      margin: 0 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #ffffff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .hero-buttons button:hover {
+      background-color: #ddd;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .about p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .service-block {
+      display: flex;
+      border: 1px solid #ccc;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+    .service-block img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+      margin-right: 30px;
+    }
+    .service-text {
+      flex: 1;
+    }
+    .benefits ul, .process ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .benefits li, .process li {
+      margin-bottom: 20px;
+    }
+    .benefits h3, .process h3 {
+      font-size: 1.3em;
+      margin-bottom: 5px;
+    }
+
+    .contact {
+      background-color: #f0f0f0;
+      padding: 60px 20px;
+    }
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 30px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-family: 'Times New Roman', serif;
+      font-size: 1em;
+      border: 1px solid #ccc;
+    }
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+      font-size: 1.2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Главный экран -->
+  <header>
+    <div class="hero-content">
+      <h1>RU ART AND DESIGN LLC</h1>
+      <p>Strategic branding and digital performance for visionary businesses. We transform ideas into impactful campaigns and optimize your online presence for real growth.</p>
+      <div class="hero-buttons">
+        <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Services</button>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Us</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Про нас -->
+  <section class="about">
+    <h2>Who We Are</h2>
+    <p>RU ART AND DESIGN LLC is a full-service creative consultancy based in the U.S. specializing in marketing, advertising, SEO, and brand strategy. We collaborate with startups and established businesses to craft customized, results-driven campaigns that resonate. Our team combines artistic vision with data-driven insight to deliver outstanding outcomes. We understand the American market, its demands, and how to position your brand ahead of the competition. Integrity, innovation, and impact — that’s our promise to every client.</p>
+  </section>
+
+  <!-- Сервисы -->
+  <section id="services">
+    <h2>What We Do</h2>
+
+    <div class="service-block">
+      <img src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&q=80&w=600" alt="Advertising">
+      <div class="service-text">
+        <h3>Advertising & Campaign Development</h3>
+        <p>We create bold, targeted advertising that captures attention and drives engagement across digital and traditional media. From concept to execution, we build campaigns that convert. Tailored to your brand, designed for your audience.</p>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" alt="SEO and Marketing">
+      <div class="service-text">
+        <h3>Digital Marketing & SEO</h3>
+        <p>We optimize your online presence through SEO, content marketing, and paid media strategies. Our goal is to boost visibility, attract the right traffic, and increase ROI. Every tactic is aligned with your business goals.</p>
+      </div>
+    </div>
+
+    <div class="service-block">
+      <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QnJhbmQlMjBDb25zdWx0aW5nJTIwJTI2JTIwU3RyYXRlZ3l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="Brand Consulting">
+      <div class="service-text">
+        <h3>Brand Consulting & Strategy</h3>
+        <p>We help you define, refine, and position your brand with clarity and confidence. From identity design to messaging, we ensure your brand tells a compelling story that connects emotionally and commercially with your audience.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Преимущества -->
+  <section class="benefits">
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>
+        <h3>Results-Driven Approach</h3>
+        <p>We don’t just create — we measure, refine, and ensure each campaign delivers on business objectives.</p>
+      </li>
+      <li>
+        <h3>Custom Strategies</h3>
+        <p>No templates here. Every strategy is uniquely designed for your industry, market, and goals.</p>
+      </li>
+      <li>
+        <h3>Deep Market Understanding</h3>
+        <p>We understand American consumer behavior and craft campaigns that resonate on a cultural level.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Процесс -->
+  <section class="process">
+    <h2>How We Work</h2>
+    <ul>
+      <li>
+        <h3>1. Discovery & Strategy</h3>
+        <p>We begin with deep research and collaborative discussions to understand your brand’s needs, audience, and objectives.</p>
+      </li>
+      <li>
+        <h3>2. Creative Execution</h3>
+        <p>Our team builds compelling campaigns, visuals, and messaging designed to connect and convert.</p>
+      </li>
+      <li>
+        <h3>3. Launch & Optimization</h3>
+        <p>We launch with precision and continually optimize using performance data and market feedback.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Контакты -->
+  <section class="contact" id="contact">
+    <h2>Let’s Work Together</h2>
+    <div class="contact-container">
+      <div class="contact-form">
+        <form>
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+      <div class="contact-info">
+        <p>We'd love to hear about your next project. Whether you're ready to start or just want to explore ideas, reach out — we respond quickly and thoughtfully.</p>
+        <p><strong>Email:</strong><br><a href="mailto:hello@ruartanddesign.agency">hello@ruartanddesign.agency</a></p>
+      </div>
+        <p><strong>Address:</strong><br>3461 Napanee Dr, Beavercreek, OH 45430-1317, US</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 RU ART AND DESIGN LLC. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
